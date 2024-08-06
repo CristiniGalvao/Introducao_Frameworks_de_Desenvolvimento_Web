@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.header img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.header h1 {
+    color: red;
+    margin: 0;
+}
+
+
+.sobre-mim {
+    font-size: 1.5em;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
