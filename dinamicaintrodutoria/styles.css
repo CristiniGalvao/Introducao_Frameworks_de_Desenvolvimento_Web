@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5;
+    padding: 5;
+}
+
+header, footer{
+    background: whitesmoke;
+    color:red;
+    text-align: center;
+    padding: 1em;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+header.logo{
+    max-width: 500px;
+    margin: 20px;
+}
+main{
+    padding: 1em;
+}
