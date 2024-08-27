@@ -5,7 +5,8 @@
     <title>Chat Unipar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body background="imagens/gifs_sao_legais.gif" id='gif'>
+    <div id="imagemLogo"><img src="imagens/LogoUnipar.png"  alt="LogoUnipar" width="200" height="141"  /></div>
     <div id="welcome-form">
         <h2>Seja Bem Vindo ao Chat Unipar!</h2>
         <input type="text" id="username" placeholder="Escolha seu nome de usuário">
@@ -16,7 +17,7 @@
         <h2>Sala de Bate-Papo UNIPAR</h2>
         <div id="messages"></div>
         <input type="text" id="messageInput" placeholder="Digite sua mensagem"/>
-        <button onclick="sendMessage()">Enviar</button>
+        <button onclick="sendMessage()" type="submit">Enviar</button>
         <button onclick="leaveChat()">Sair da Sala</button>
     </div>
 

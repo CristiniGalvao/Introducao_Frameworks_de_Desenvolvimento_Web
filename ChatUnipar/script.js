@@ -65,3 +65,16 @@ function enterChatRoom() {
             document.getElementById("messageInput").value = '';
         }
     }
+    function leaveChat() {
+        if (stompClient) {
+            stompClient.send("/app/addUser", {}, JSON.stringify({
+                sender: username,
+                type: 'LEAVE'
+            }));
+            stompClient.disconnect(function () {
+                console.log('Desconectado');
+                document.getElementById("welcome-form").style.display = "block";
+                document.getElementById("chat-room").style.display = "none";
+            });
+        }
+    }

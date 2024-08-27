@@ -2,7 +2,9 @@
 #chat-room {
     display: none;
 }
-
+#gif{
+    background-size: cover;
+}
 #messages {
     border: 1px solid #ddd; 
     padding: 10px; 
@@ -10,8 +12,95 @@
     overflow-y: scroll; 
     background-color: #f9f9f9; 
     border-radius: 5px; 
-    font-family: Arial, sans-serif; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     font-size: 14px; 
-    color: #333; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Primeira Pagina Ou login    */
+#welcome-form h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 300px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#welcome-form input {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block; 
+    margin: 0 auto 10px auto; 
+}
+
+#welcome-form button {
+    display: block; 
+    width: 80%;
+    max-width: 300px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(50deg, #b41724, #4285f4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; 
+}
+
+/* Sala Chat */
+#chat-room {
+    text-align: left;
+    padding: 20px;
+}
+
+#chat-room h2 {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#messages {
+    border: none;
+    background: linear-gradient(90deg, #b41724, #4285f4);
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #e4e1e1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #faf9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#chat-room input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#chat-room button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background: linear-gradient(90deg, #b41724, #4285f4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
 }
